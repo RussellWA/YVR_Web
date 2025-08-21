@@ -6,10 +6,9 @@ export default function IntroSection() {
     return (
         <Box
             sx={{
-                paddingX: "11rem",
+                px: "11rem",
                 paddingTop: "6rem",
                 paddingBottom: "3rem",
-                borderColor: "divider",
                 backgroundColor: "#2741A1",
             }}
         >
