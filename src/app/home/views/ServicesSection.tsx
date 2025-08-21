@@ -127,8 +127,8 @@ export default function ServicesSection() {
                             fontSize: "1rem",
                         }}
                     >
-                        Here at YVR3D, an Indonesian-based company, we're dedicated to serving all creators. 
-                        We believe that custom manufacturing should be within everyone's reach, not just industry experts.
+                        Here at YVR3D, an Indonesian-based company, we&apos;re dedicated to serving all creators. 
+                        We believe that custom manufacturing should be within everyone&apos;s reach, not just industry experts.
                     </Typography>
                     <Typography 
                         gutterBottom
@@ -136,8 +136,8 @@ export default function ServicesSection() {
                             fontSize: "1rem",
                         }}
                     >
-                        Whether you're a student, a small business, or a passionate hobbyist, our platform is designed for you. 
-                        We've made the process of creating custom parts simple, straightforward and affordable, 
+                        Whether you&apos;re a student, a small business, or a passionate hobbyist, our platform is designed for you. 
+                        We&apos;ve made the process of creating custom parts simple, straightforward and affordable, 
                         empowering our local community to transform their innovative ideas into tangible results. 
                         Choose YVR3D to bring your vision to life, right here in Indonesia.
                     </Typography>
