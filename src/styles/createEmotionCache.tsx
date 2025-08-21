@@ -1,5 +1,5 @@
-import createCache from &apos;@emotion/cache&apos;;
+import createCache from '@emotion/cache';
 
 export default function createEmotionCache() {
-    return createCache({ key: &apos;css&apos;, prepend: true });
+    return createCache({ key: 'css', prepend: true });
 }
