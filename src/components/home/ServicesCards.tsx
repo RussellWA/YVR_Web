@@ -1,7 +1,6 @@
-import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import { Box, Card, CardContent, Typography } from "@mui/material";
-import Image from "next/image";
 
 const services = [
     {
