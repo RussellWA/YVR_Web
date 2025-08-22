@@ -1,24 +1,7 @@
+import { services } from '@/constants/HomeCards';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import { Box, Card, CardContent, Typography } from "@mui/material";
-
-const services = [
-    {
-        title: "Rapid Prototyping",
-        description: "Accelerate your design cycle with fast, functional prototypes that validate form, fit, and function before production.",
-        points: ["Concept validation", "Functional testing", "Design iteration"],
-    },
-    {
-        title: "Production Parts",
-        description: "Manufacture end-use parts with consistent quality and performance using industrial-grade materials and processes.",
-        points: ["Mid-volume production", "Spare parts manufacturing", "Custom components"],
-    },
-    {
-        title: "Tooling & Fixtures",
-        description: "Optimize your manufacturing process with custom jigs, fixtures, and tooling designed for efficiency and precision.",
-        points: ["Assembly aids", "Inspection fixtures", "Custom workholding"],
-    },
-];
 
 function ServiceCard({ title, description, points }: { title: string, description: string, points: string[] }) {
     return (
@@ -81,8 +64,8 @@ export default function ServicesCards() {
                 flexWrap: "wrap",
             }}
         >
-            {services.map((service) => (
-                <ServiceCard key={service.title} {...service} />
+            {services.map((item) => (
+                <ServiceCard key={item.title} {...item} />
             ))}
         </Box>
     );

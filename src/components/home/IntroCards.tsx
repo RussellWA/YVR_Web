@@ -1,29 +1,6 @@
+import { introCards } from "@/constants/HomeCards";
 import { Card, CardContent, Typography, Box } from "@mui/material";
-import BoltIcon from "@mui/icons-material/Bolt";
-import StraightenIcon from "@mui/icons-material/Straighten";
-import LayersIcon from "@mui/icons-material/Layers";
 import { SxProps } from "@mui/material";
-
-const introCards = [
-    {
-        title: "Rapid Turnaround",
-        description:
-            "Standard production lead times of up to 1 business day for most projects.",
-        Icon: BoltIcon,
-    },
-    {
-        title: "Precision Engineering",
-        description:
-            "±0.1mm accuracy with comprehensive quality control processes.",
-        Icon: StraightenIcon,
-    },
-    {
-        title: "10+ Materials & Colours",
-        description:
-            "Wide selection of engineering-grade materials for any application.",
-        Icon: LayersIcon,
-    },
-];
 
 function IntroCard({
     title,
@@ -91,8 +68,8 @@ export default function IntroCards() {
                 mt: 8,
             }}
         >
-            {introCards.map((card) => (
-                <IntroCard key={card.title} {...card} />
+            {introCards.map((item) => (
+                <IntroCard key={item.title} {...item} />
             ))}
         </Box>
     );

@@ -1,13 +1,13 @@
 "use client";
 
+import { buttons } from "@/constants/Navbar";
 import { AccountCircle, Translate } from "@mui/icons-material";
 import { Box, Button, IconButton, Toolbar, Typography } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 
-
 export default function Navbar() {
     return (
-        <AppBar position="static" color="inherit">
+        <AppBar position="sticky" color="inherit">
             <Toolbar sx={{ justifyContent: "space-between" }}>
                 <Box sx={{ display: "flex", gap: 3 }}>
                     <Typography 
@@ -16,60 +16,22 @@ export default function Navbar() {
                             fontWeight: "bold", 
                             color: "black", 
                             mr: 4, 
-                            fontFamily: "inherit" 
                         }}
                     >
                         YVR<span style={{ color: "#244FAA" }}>3D</span>
                     </Typography>
-                    <Button 
-                        color="inherit" 
-                        sx={{ 
-                            fontSize: "1rem", 
-                            fontWeight: "500", 
-                            fontFamily: "inherit" 
-                        }}
-                    >
-                        Capabilities
-                    </Button>
-                    <Button 
-                        color="inherit" 
-                        sx={{ 
-                            fontSize: "1rem", 
-                            fontWeight: "500", 
-                            fontFamily: "inherit" 
-                        }}
-                    >
-                        R&D Services
-                    </Button>
-                    <Button 
-                        color="inherit" 
-                        sx={{ 
-                            fontSize: "1rem", 
-                            fontWeight: "500", 
-                            fontFamily: "inherit" 
-                        }}
-                    >
-                        Free 3D Models
-                    </Button>
-                    <Button 
-                        color="inherit" 
-                        sx={{ 
-                            fontSize: "1rem", 
-                            fontWeight: "500", 
-                            fontFamily: "inherit" 
-                        }}
-                    >
-                        About Us
-                    </Button>
-                    <Button 
-                        color="inherit" 
-                        sx={{ 
-                            fontSize: "1rem", 
-                            fontWeight: "500", 
-                            fontFamily: "inherit" 
-                        }}>
-                        Blog
-                    </Button>
+                    {buttons.map((item) => (
+                        <Button 
+                            key={item.name}
+                            color="inherit" 
+                            sx={{ 
+                                fontSize: "1rem", 
+                                fontWeight: "500", 
+                            }}
+                        >
+                            {item.name}
+                        </Button>
+                    ))}
                 </Box>
 
                 <Box sx={{ display: "flex", gap: 4, alignItems: "center" }}>
@@ -78,7 +40,6 @@ export default function Navbar() {
                         sx={{ 
                             borderRadius: 2, 
                             fontWeight: "bold", 
-                            fontFamily: "inherit", 
                             backgroundColor: "#244FAA" 
                         }}
                     >
