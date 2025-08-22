@@ -50,7 +50,7 @@ export default function DevCycleSection() {
                             fontSize: "1rem",
                         }}
                 >
-                    In today's fast-paced market, speed is a competitive advantage. 
+                    In today&apos;s fast-paced market, speed is a competitive advantage. 
                     Our digital manufacturing platform removes the traditional bottlenecks of prototyping and low-volume production. 
                     Get parts in your hands in days, not weeks. 
                     This allows you to iterate faster, test more thoroughly, and get your products to market ahead of the competition.
