@@ -5,17 +5,9 @@ import Image from "next/image";
 export default function BottomSectionCards() {
     return (
         <Card
-            sx={{
-                padding: "3rem",
-                boxShadow: 6,
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                borderRadius: 3,
-                mt: 7,
-                gap: 8,
-                maxWidth: "1000px",
-                mx: "auto",
+            sx={{ padding: "3rem", boxShadow: 6,
+                display: "flex", justifyContent: "space-between", alignItems: "center",
+                borderRadius: 3, mt: 7, gap: 8, maxWidth: "1000px", mx: "auto",
             }}
         >
             <Image
@@ -45,13 +37,7 @@ export default function BottomSectionCards() {
                     {reduction.map((item) => (
                         <Card
                             key={item.label}
-                            sx={{
-                                px: 3,
-                                py: 2,
-                                borderRadius: 2,
-                                boxShadow: 2,
-                                textAlign: "center",
-                            }}
+                            sx={{ px: 3, py: 2, borderRadius: 2, boxShadow: 2, textAlign: "center", }}
                         >
                         <Typography fontWeight="bold" sx={{ fontSize: "2rem", color: "#2741A1" }}>
                             {item.percentage}

@@ -3,14 +3,7 @@ import Image from "next/image";
 
 export default function ImageRow() {
     return (
-        <Box
-            sx={{
-                display: "flex",
-                justifyContent: "flex-start",
-                alignItems: "start",
-                gap: 4,
-            }}
-        >
+        <Box sx={{ display: "flex", justifyContent: "flex-start", alignItems: "start", gap: 4 }}>
             <Image
                 src="/images/lockbox_front.jpg"
                 alt="3D Model 1"

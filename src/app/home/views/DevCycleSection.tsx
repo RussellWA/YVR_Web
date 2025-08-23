@@ -10,13 +10,9 @@ export default function DevCycleSection() {
             justifyContent="space-between"
             alignItems="center"
             flexDirection="row"
-            sx={{
-                py: "5rem",
-                px: "8rem",
-                bgcolor: "#e8f4fc",
-                gap: 12,
-            }}
+            sx={{ py: "5rem", px: "8rem", bgcolor: "#e8f4fc", gap: 12, }}
         >
+            {/* Texts */}
             <Box display="flex" flexDirection="column" gap={3}>
                 <Typography fontWeight="bold" sx={{ fontSize: "1.7rem" }}>
                     Accelerate Your Product Development Cycle
@@ -27,6 +23,8 @@ export default function DevCycleSection() {
                     Get parts in your hands in days, not weeks. 
                     This allows you to iterate faster, test more thoroughly, and get your products to market ahead of the competition.
                 </Typography>
+
+                {/* The Check List */}
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 1 }}>
                     {benefits.map((item) => (
                         <Box key={item.title} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
@@ -40,22 +38,14 @@ export default function DevCycleSection() {
                         </Box>
                     ))}
                 </Box>
+
+                {/* Button */}
                 <Link href="/process" underline="none">
                     <Box
                         component="span"
-                        sx={{
-                            mt: 2,
-                            display: "inline-flex",
-                            alignItems: "center",
-                            gap: 1,
-                            px: 2.5,
-                            py: 1.2,
-                            borderRadius: 2,
-                            fontWeight: "bold",
-                            fontSize: "1rem",
-                            bgcolor: "#3163E9",
-                            color: "white",
-                            boxShadow: 3,
+                        sx={{ mt: 2, display: "inline-flex", alignItems: "center", 
+                            gap: 1, px: 2.5, py: 1.2, borderRadius: 2, fontWeight: "bold",
+                            fontSize: "1rem", bgcolor: "#3163E9", color: "white", boxShadow: 3,
                             transition: "all 0.2s ease-in-out",
                             "&:hover": {
                                 bgcolor: "#1d42af",
@@ -68,15 +58,11 @@ export default function DevCycleSection() {
                     </Box>
                 </Link>
             </Box>
+
+            {/* Video */}
             <Box
-                sx={{
-                    borderRadius: "16px",
-                    overflow: "hidden",
-                    flexShrink: 0,
-                    width: "100%",
-                    maxWidth: 720,
-                    aspectRatio: "16/9",
-                    boxShadow: 6,
+                sx={{ borderRadius: "16px", overflow: "hidden", flexShrink: 0,
+                    width: "100%", maxWidth: 720, aspectRatio: "16/9", boxShadow: 6,
                 }}
             >
                 <video style={{ width: "100%", height: "100%" }} controls>

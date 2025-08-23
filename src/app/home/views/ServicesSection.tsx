@@ -6,22 +6,21 @@ import Image from "next/image";
 export default function ServicesSection() {
     return (
         <Box
-            sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-                px: "11rem",
-                paddingTop: "4rem",
-                paddingBottom: "5rem",
+            sx={{ display: "flex", flexDirection: "column", justifyContent: "space-between",
+                px: "11rem", paddingTop: "4rem", paddingBottom: "5rem",
             }}
         >
+            {/* Tests */}
             <Typography fontWeight="bold" gutterBottom sx={{ fontSize: "2.5rem", textAlign: "center" }}>
                 Our 3D Printing Services
             </Typography>
             <Typography variant="body1" color="text.secondary" sx={{ textAlign: "center" }}>
                 Leveraging cutting-edge technologies to transform your ideas into precision-engineered reality.
             </Typography>
+
+            {/* Cards */}
             <ServicesCards />
+
             <Card
                 sx={{
                     display: "flex",
@@ -71,14 +70,11 @@ export default function ServicesSection() {
                     style={{ objectFit: "contain" }}
                 />
             </Card>
+
+            {/* Image & Text Section */}
             <Box
-                sx={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    flexDirection: "row",
-                    mt: 4,
-                    gap: 8,
+                sx={{ display: "flex", justifyContent: "center", alignItems: "center", 
+                    flexDirection: "row", mt: 4, gap: 8, 
                 }}
             >
                 <Image
