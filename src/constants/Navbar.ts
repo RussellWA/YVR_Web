@@ -1,7 +1,7 @@
 export const buttons = [
-    { name: "Capabilities" },
-    { name: "R&D Services" },
-    { name: "Free 3D Models" },
-    { name: "About Us" },
-    { name: "Blog" }
+    { name: "Capabilities", path: '/capabilities' },
+    { name: "R&D Services", path: '/rd-services' },
+    { name: "Free 3D Models", path: '/free-3d-models' },
+    { name: "About Us", path: '/about-us' },
+    { name: "Blog", path: '/blog' }
 ];

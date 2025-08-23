@@ -2,28 +2,36 @@
 
 import { buttons } from "@/constants/Navbar";
 import { AccountCircle, Translate } from "@mui/icons-material";
-import { Box, Button, IconButton, Toolbar, Typography } from "@mui/material";
+import { Box, Button, IconButton, Link, Toolbar, Typography } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 
 export default function Navbar() {
     return (
         <AppBar position="sticky" color="inherit">
             <Toolbar sx={{ justifyContent: "space-between" }}>
-                <Box sx={{ display: "flex", gap: 3 }}>
-                    <Typography variant="h4" sx={{ fontWeight: "bold", color: "black", mr: 4 }}>
-                        YVR<span style={{ color: "#244FAA" }}>3D</span>
-                    </Typography>
+                <Box sx={{ display: "flex", alignItems: "center", gap: 4 }}>
+                    <Link
+                        href="/home"
+                        style={{ textDecoration: "none" }}
+                    >
+                        <Typography variant="h4" sx={{ fontWeight: "bold", color: "black", mr: 2 }}>
+                            YVR<span style={{ color: "#244FAA" }}>3D</span>
+                        </Typography>
+                    </Link>
                     {buttons.map((item) => (
-                        <Button 
-                            key={item.name}
-                            color="inherit" 
-                            sx={{ 
-                                fontSize: "1rem", 
-                                fontWeight: "500", 
-                            }}
+                        <Link 
+                            key={item.name} 
+                            href={item.path} 
+                            style={{ textDecoration: "none" }}
                         >
+                            <Typography 
+                                sx={{ fontSize: "1rem", fontWeight: 500, color: "black", 
+                                    "&:hover": { color: "#3C6CEA" } 
+                                }}
+                            >
                             {item.name}
-                        </Button>
+                            </Typography>
+                        </Link>
                     ))}
                 </Box>
 
