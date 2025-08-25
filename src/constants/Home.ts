@@ -1,6 +1,6 @@
 export const stats = [
-    { label: "Parts Produced", value: "1 Thousand+" },
-    { label: "Total Machine Hours", value: "16 Thousand+" },
+    { label: "Parts Produced", value: "1000+" },
+    { label: "Total Machine Hours", value: "16000+" },
     { label: "Indonesian Labour", value: "100%" },
     { label: "Trusted By\nEmerging Industries", value: "" },
 ];

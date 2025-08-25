@@ -93,7 +93,7 @@ export default function Footer() {
                 </Box>
             </Box>
             <Box display="flex" flexDirection="column" alignItems="center">
-                <Divider sx={{ mb: 5, mt: 5, width: "90%", backgroundColor: "#7E7E7E" }} />
+                <Divider sx={{ my: 5, width: "90%", backgroundColor: "#7E7E7E" }} />
                 <Box display="flex" flexDirection="column" alignItems="center" gap={1}>
                     <Typography variant="body2" color="#7E7E7E" align="center">
                         © 2025 PT YVR Technologies Indonesia. All Rights Reserved.

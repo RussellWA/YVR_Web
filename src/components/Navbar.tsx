@@ -11,7 +11,7 @@ export default function Navbar() {
             <Toolbar sx={{ justifyContent: "space-between" }}>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 4 }}>
                     <Link
-                        href="/home"
+                        href="/"
                         style={{ textDecoration: "none" }}
                     >
                         <Typography variant="h4" sx={{ fontWeight: "bold", color: "black", mr: 2 }}>
@@ -29,7 +29,7 @@ export default function Navbar() {
                                     "&:hover": { color: "#3C6CEA" } 
                                 }}
                             >
-                            {item.name}
+                                {item.name}
                             </Typography>
                         </Link>
                     ))}
