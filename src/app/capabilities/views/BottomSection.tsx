@@ -54,7 +54,7 @@ export default function BottomSection() {
                             fontWeight: "bold", fontSize: "1rem", px: 5, py: 1 
                         }}
                     >
-                        Contact Us
+                        Subscribe
                     </Button>
                 </Box>
             </Card>
