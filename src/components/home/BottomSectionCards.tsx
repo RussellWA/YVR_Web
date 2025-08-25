@@ -11,7 +11,7 @@ export default function BottomSectionCards() {
             }}
         >
             <Image
-                src="/images/two_feeders.jpg"
+                src="/images/home/two_feeders.jpg"
                 alt="Two Feeders"
                 width={313}
                 height={378}

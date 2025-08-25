@@ -63,7 +63,7 @@ export default function ServicesSection() {
                     </Box>
                 ))}
                 <Image
-                    src="/images/ternakin_logo.png"
+                    src="/images/home/ternakin_logo.png"
                     alt="Ternakin Logo"
                     width={177}
                     height={80}
@@ -78,7 +78,7 @@ export default function ServicesSection() {
                 }}
             >
                 <Image
-                    src="/images/3d_prints.png"
+                    src="/images/home/3d_prints.png"
                     alt="3D Prints"
                     width={504}
                     height={336}
